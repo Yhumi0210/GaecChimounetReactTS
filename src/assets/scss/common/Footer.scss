@@ -1,0 +1,36 @@
+// Colors
+$color-carotte: #E09132;
+$color-vert-kaki: #4E614A;
+$color-vert-clair: #455940;
+$color-vert-sapin: #2E3C29;
+$color-beige-creme: #FFEFCD;
+$color-chocolat-lait: #A58E74;
+$color-chocolate: #69462D;
+$color-bc-clair: #697965;
+
+footer {
+  box-shadow: 2px 2px 5px black;
+  background-color: $color-vert-kaki;
+  color: $color-beige-creme;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //background-color: rgba(78, 97, 74, 0.25);
+  //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  //backdrop-filter: blur(10px);
+}
+
+footer a:hover {
+  color: $color-carotte;
+  background-color: transparent;
+}
+footer ul {
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: $color-beige-creme;
+  transition: all 250ms ease-in-out;
+}

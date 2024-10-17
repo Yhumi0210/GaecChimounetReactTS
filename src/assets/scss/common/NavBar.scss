@@ -1,0 +1,92 @@
+// Colors
+$color-carotte: #E09132;
+$color-vert-kaki: #4E614A;
+$color-vert-clair: #455940;
+$color-vert-sapin: #2E3C29;
+$color-beige-creme: #FFEFCD;
+$color-chocolat-lait: #A58E74;
+$color-chocolate: #69462D;
+$color-bc-clair: #697965;
+
+
+
+.navBar {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 0.5rem 6rem 0.5rem 6rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(78, 97, 74, 0.25);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  &__logo {
+    display: flex;
+    &__img {
+      height: 4rem;
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+    }
+    &__typo {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin-left: 1rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__link {
+    display: flex;
+    width: 40rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    justify-content: space-between;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: $color-beige-creme;
+  transition: all 250ms ease-in-out;
+  &:hover {
+    color: $color-carotte;
+    background-color: transparent;
+  }
+}
+
+li a:after {
+  content: '';
+  display: flex;
+  margin: auto;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+  &:hover:after {
+    width: 90%;
+    background: $color-carotte;
+  }
+}
+li a:hover:after {
+  width: 90%;
+  background: $color-carotte;
+}
+
+.open {
+  display: flex;
+  animation: transformMenu 400ms ease-in-out forwards;
+}
+
+@keyframes transformMenu {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: initial;
+  }
+}

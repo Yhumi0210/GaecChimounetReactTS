@@ -1,0 +1,56 @@
+// Colors
+$color-carotte: #E09132;
+$color-vert-kaki: #4E614A;
+$color-vert-clair: #455940;
+$color-vert-sapin: #2E3C29;
+$color-beige-creme: #FFEFCD;
+$color-chocolat-lait: #A58E74;
+$color-chocolate: #69462D;
+$color-bc-clair: #697965;
+
+
+.hero__index {
+  //position: fixed;
+  //z-index: 10;
+  background-image: linear-gradient(to bottom, rgba(78, 97, 74, 0.1), rgba(78, 97, 74, 1)), url('../img/bg_img/DSC045421.webp');
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  width: 100%;
+  height: 45rem;
+  margin-top: -4.2rem;
+  &__title {
+    color: $color-beige-creme;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    padding: 18rem 0 4rem 0;
+    background-color: transparent;
+    &__p {
+      background-color: transparent;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  &__logo {
+    margin: 2rem 6rem 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    &__balf {
+      //width: 6rem;
+      height: 7rem;
+    }
+    &__oignon {
+      //width: 8rem;
+      height: 7rem;
+    }
+    &__bio {
+      //width: 4rem;
+      height: 9rem;
+    }
+  }
+}

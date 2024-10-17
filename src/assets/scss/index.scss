@@ -1,0 +1,69 @@
+@import 'common/NavBar';
+@import 'Hero';
+@import 'adds/CircleCommands';
+@import 'Home';
+@import 'common/Footer';
+@import 'common/LegalMentions';
+
+//fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+  font-family: 'argesta';
+  src: url('../fonts/argesta.ttf') format('truetype')
+}
+@font-face {
+  font-family: 'didot_regular';
+  src: url('../fonts/didot_regular.ttf') format('truetype')
+}
+
+//mobile FIRST
+
+// Colors
+$color-carotte: #E09132;
+$color-vert-kaki: #4E614A;
+$color-vert-clair: #455940;
+$color-vert-sapin: #2E3C29;
+$color-beige-creme: #FFEFCD;
+$color-chocolat-lait: #A58E74;
+$color-chocolate: #69462D;
+$color-bc-clair: #697965;
+
+* {
+  font-family: 'Josefin Sans', cursive;
+  box-sizing: border-box;
+  //background-color: $color-vert-kaki;
+  color: $color-beige-creme;
+  text-shadow: black 1px 0px 10px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  //margin: 0 6rem 0 6rem;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: 'didot_regular', cursive;
+}
+
+p, time, span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
